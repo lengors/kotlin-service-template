@@ -155,7 +155,7 @@ tasks {
     }
 
     withType<Jar> {
-        manifest.attributes["Main-Class"] = "io.github.lengors.ApplicationKt"
+        manifest.attributes["Main-Class"] = "io.github.lengors.kotlinservicetemplate.ApplicationKt"
     }
 
     withType<Test> {
