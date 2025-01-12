@@ -1,0 +1,5 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+$dokka.location:io.github.lengors.kotlinservicetemplate////PointingToDeclaration/kotlin-service-template/io.github.lengors.kotlinservicetemplate/index.html
+$dokka.location:io.github.lengors.kotlinservicetemplate//main/#/PointingToDeclaration/kotlin-service-template/io.github.lengors.kotlinservicetemplate/main.html
+io.github.lengors.kotlinservicetemplate
