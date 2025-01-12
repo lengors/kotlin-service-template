@@ -6,6 +6,7 @@ import java.nio.file.Paths
 plugins {
     kotlin("jvm")
     id("org.sonarqube")
+    id("com.gradleup.shadow")
     id("org.jetbrains.dokka")
     id("org.jetbrains.kotlinx.kover")
     id("org.jlleitschuh.gradle.ktlint")
@@ -131,6 +132,10 @@ tasks {
             customStyleSheets.from(file("dokka/styleSheets/custom.css"))
             templatesDir = file("dokka/templates")
         }
+    }
+
+    withType<Jar> {
+        manifest.attributes["Main-Class"] = "io.github.lengors.ApplicationKt"
     }
 
     withType<Test> {
